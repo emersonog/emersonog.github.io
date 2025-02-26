@@ -22,7 +22,7 @@
 .experiencia-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  max-width: 40ch;
+  max-width: 45ch;
   margin-bottom: 60px;
   color: #525252;
 }
@@ -47,7 +47,8 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
+  background: linear-gradient(#8A2BE2, #FF1493);
+  ;
   position: absolute;
   top: 20px;
   left: -4px;
@@ -89,4 +90,15 @@
   background: #ffffff;
   border-radius: 4px;
   padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    color: #141414;
+  }
 }

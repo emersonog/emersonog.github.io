@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  padding-bottom: 54px;
 }
 
 .introducao h1 {

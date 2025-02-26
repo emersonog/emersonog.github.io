@@ -1,4 +1,14 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="98.9949" width="120" height="20" transform="rotate(-45 0 98.9949)" fill="#70DA1C"/>
-<rect x="28.2842" y="98.9949" width="120" height="20" transform="rotate(-45 28.2842 98.9949)" fill="#CCF235"/>
+  <defs>
+    <linearGradient id="gradienteRoxoParaRosa" x1="0" y1="0" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF1493"/> <!-- baixo e -->
+      <stop offset="100%" stop-color="#FF1493"/> <!-- cima e -->
+    </linearGradient>
+    <linearGradient id="gradienteRosaParaRoxo" x1="0" y1="0" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9210c3"/> <!-- baixo d -->
+      <stop offset="100%" stop-color="#9210c3"/> <!-- cima d -->
+    </linearGradient>
+  </defs>
+  <rect y="98.9949" width="120" height="20" transform="rotate(-45 0 98.9949)" fill="url(#gradienteRoxoParaRosa)"/>
+  <rect x="28.2842" y="98.9949" width="120" height="20" transform="rotate(-45 28.2842 98.9949)" fill="url(#gradienteRosaParaRoxo)"/>
 </svg>
