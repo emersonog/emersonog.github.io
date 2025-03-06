@@ -122,7 +122,7 @@
   color: #8f8f8f;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .formacao-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;

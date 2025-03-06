@@ -2,6 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   color: #141414;
+  /*background: linear-gradient(to top, #670388, #ffffff);*/
 }
 
 body {
@@ -27,14 +28,14 @@ img {
   display: block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .experiencia .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .formacao .subtitulo {
       font-size: 3rem;
       text-transform: capitalize;

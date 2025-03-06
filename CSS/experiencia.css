@@ -13,18 +13,22 @@
   word-break: break-all;
   text-transform: uppercase;
   max-width: 5ch;
+  padding-top: 20px;
 }
 
 .experiencia .subtitulo {
   color: #e0e0e0;
+  margin-top: 20px;
 }
 
 .experiencia-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 45ch;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: #525252;
+  padding-top: 20px;
+  margin-top: 30px;
 }
 
 .experiencia-texto strong {
@@ -35,7 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
-  padding: 20px;
+  padding: 15px;
   background: #f5f5f5;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -92,7 +96,7 @@
   padding: 5px 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .experiencia {
     grid-template-columns: 1fr;
     gap: 40px;

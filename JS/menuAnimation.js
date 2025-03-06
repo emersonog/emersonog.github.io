@@ -1,38 +1,18 @@
-const debounce = function (func, wait, immediate) {
-  let timeout;
-  return function (...args) {
-    const context = this;
-    const later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    const callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-};
+let navBar = document.querySelector('#header')
 
+document.addEventListener('scroll', () => {
+  let scrollTop = window.scrollY
+  if (scrollTop > 0) {
+    navBar.classList.add('rolar')
+  } else {
+    navBar.classList.remove('rolar')
+  }
+})
+let btnMenuMob = document.querySelector('#btn-menu-mob')
+let line1 = document.querySelector('.line-menumob-1')
+let line2 = document.querySelector('.line-menumob-2')
 
-
-
-
-const target = document.querySelectorAll('[data-anime]');
-const animationClass = 'animate';
-
-function animeScroll() {
-  target.forEach((element) => {
-    const elementTop = element.getBoundingClientRect().top;
-    if (elementTop < window.innerHeight * 0.87) {
-      element.classList.add(animationClass);
-    } else {
-      element.classList.remove(animationClass);
-    }
-  });
-}
-animeScroll()
-if (target.length) {
-  window.addEventListener('scroll', debounce(function () {
-    animeScroll();
-  }, 5));
-}
+btnMenuMob.addEventListener("click", () => {
+  line1.classList.toggle('ativo1')
+  line2.classList.toggle('ativo2')
+})
