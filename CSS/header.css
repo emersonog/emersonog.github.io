@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   /*background: rgba(175, 86, 156, 0.8);
    Cor de fundo para contraste */
   z-index: 1500;
@@ -128,9 +128,10 @@
   height: 100vh;
 }
 
+/*
 body.no-overflow {
   overflow: hidden;
-}
+}*/
 
 /*--------------------------*/
 .header {
